@@ -1,0 +1,73 @@
+.error {
+
+    h1 {
+
+        color: $pink;
+        font-weight: 700;
+        font-size: 288px;
+        margin: 169px 0 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: $minDesktop) {
+
+            height: 99px;
+            margin: 195px 0 0 0;
+            font-size: 96px;
+                        
+        }
+    
+    }
+    
+    p {
+    
+        height: 51px;
+        color: $pink;
+        font-weight: 500;
+        font-size: 36px;
+        margin: 66px $margin100 0 $margin100;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-align: center;
+
+        @media screen and (max-width: $minDesktop) {
+
+            font-size: 18px;
+            line-height: 26px;
+            margin: 11px 15.334% 0 15.334%;
+            
+        }
+    
+    }
+    
+    &__link {
+    
+        height: 26px;
+        color: $pink;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 182px 0 159px 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        text-decoration: none;
+
+        @media screen and (max-width: $minDesktop) {
+
+            height: 20px;
+            font-size: 14px;
+            margin: 133px 0 235px 0;
+            
+        }
+
+        &:hover {
+    
+            text-decoration: underline;
+        
+        }
+    
+    }
+    
+}
