@@ -1,8 +1,9 @@
+/*------------------------------------ Ce fichier permet d'initialiser l'app React, et le greffer au HTML. ---------------------------------------- */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Home from './pages/Home/Home';
+import Home from './pages/Home/Home'; //1er composant (App.js transformé en Home.js)
 import APropos from './pages/APropos/APropos';
 import FicheLogement from './pages/FicheLogement/FicheLogement';
 import Error from './pages/Error/Error'

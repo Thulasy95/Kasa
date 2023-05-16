@@ -1,0 +1,90 @@
+.collapse {
+
+    margin: 40px 14.48% 0 14.48%;
+
+    @media screen and (max-width: $minDesktop) {
+
+        margin: 20px $margin20 0 $margin20;
+
+    }
+
+    &__dropdown {
+
+        height: 47px;
+        padding: 0 1.76%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $pink;
+
+        @media screen and (max-width: $minDesktop) {
+
+            height: 30px;
+            padding: 0 3%;
+            
+        }
+
+        p {
+
+            color: $white;
+            font-weight: 500;
+            font-size: 24px;
+            margin: 0;
+
+            @media screen and (max-width: $minDesktop) {
+
+                font-size: 13px;
+
+            }
+
+        }
+
+        img {
+
+            width: 24px;
+            height: 13.71px;
+            color: $white;
+
+            @media screen and (max-width: $minDesktop) {
+
+                width: 13.81px;
+                height: 7.91px;
+        
+            }
+
+            &:hover {
+
+                cursor: pointer;
+
+            }
+
+        }
+
+    }
+
+    &__dropdownOpen {
+
+        padding: 28px 1.76% 18px 1.76%;
+        border-radius: 5px;
+        background-color: $ligthPink;
+        color: $pink;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 34px;
+        text-align: justify;
+        position: relative;
+        top: -10px;
+        z-index: -1;
+
+        @media screen and (max-width: $minDesktop) {
+
+            font-size: 12px;
+            line-height: 17px;
+            padding: 20px 3% 10px 3%;
+        
+        }
+
+    }
+
+}
