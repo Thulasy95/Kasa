@@ -62,6 +62,7 @@
         opacity: 0.3;
         position: absolute;
         top: 0;
+        mix-blend-mode: darken;
 
         @media screen and (max-width: $minDesktop) {
 

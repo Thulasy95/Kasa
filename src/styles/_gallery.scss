@@ -1,0 +1,31 @@
+.gallery {
+
+    margin: 40px $margin100 0 $margin100;
+    padding: 56px $margin50 56px $margin50;
+    background-color: $ligthPink;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 50px;
+
+    @media only screen and (max-width: 1180px) and (min-width: $minDesktop) {
+
+        grid-template-columns: 1fr 1fr;      
+        
+    }
+
+    @media only screen and (max-width: $minDesktop) {
+
+        margin: 20px $margin20 0 $margin20;
+        padding: 0;
+        background-color: unset;
+        border-radius: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;        
+        
+    }
+
+
+}

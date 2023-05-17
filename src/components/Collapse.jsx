@@ -11,25 +11,25 @@ function Collapse({collapseTitle, collapseContent}) {
     return isOpen ? (
         
         //Lorsque isOpen est vrai, on affiche le contenu et on change le vector en up:
-        <section className='collapse'>
+        <div className='collapse'>
             <div className="collapse__dropdown">
                 <p>{collapseTitle}</p>
                 {/*et lorsqu'on clique sur le vector up on passe le isOpen à faux :*/}
                 <div onClick={() => { setIsOpen(false) }}><img src={VectorUp} alt="vector up"/></div>
             </div>
             <div className='collapse__dropdownOpen'>{collapseContent}</div>
-        </section>
+        </div>
 
     ) : ( 
 
         //Lorsque isOpen est faux, on cache le contenu et on change le vector en down. 
-        <section className='collapse'>
+        <div className='collapse'>
             <div className="collapse__dropdown">
                 <p>{collapseTitle}</p>
                 {/*et lorsqu'on clique sur le vector down on passe le isOpen à vrai :*/}
                 <div onClick={() => { setIsOpen(true) }}><img src={VectorDown} alt="vector down"/></div>
             </div>
-        </section>
+        </div>
 
     )
 

@@ -1,0 +1,59 @@
+.card {
+    
+    width: 302.22px;
+    height: 302.22px;
+    background: $lineargradient;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    
+    &:hover{
+
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+
+    }
+
+    @media screen and (max-width: $minDesktop) {
+
+        width: 335px;
+        height: 255px;
+        margin-top: unset;
+        
+    }
+
+    img {
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        background-color: $pink;
+        mix-blend-mode: darken;
+
+    }
+
+    p {
+
+        width: 266.66px;
+        height: 52px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: $white;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        margin: 230px 17.77px 20px 17.77px;
+        display: flex;
+        align-items: flex-end;
+
+        @media screen and (max-width: $minDesktop) {
+
+            width: 305px;
+            margin: 188px 15px 15px 15px;
+            
+        }
+
+    }
+
+}
