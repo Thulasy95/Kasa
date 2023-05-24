@@ -7,7 +7,7 @@ function Header() {
             <img src={logo} alt="logo Kasa"/>
             <nav className='nav'>
                 <Link to="/" className='nav__link'>Accueil</Link>
-                <Link to="/APropos" className='nav__link'>A Propos</Link>
+                <Link to="/About" className='nav__link'>A Propos</Link>
             </nav>
         </header>
     );

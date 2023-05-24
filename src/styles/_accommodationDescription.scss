@@ -1,0 +1,305 @@
+.accommodationDescription {
+
+    margin: 30px $margin100 0 $margin100;
+
+    @media screen and (max-width: $minDesktop) {
+
+        margin: 15px $margin20 0 $margin20;
+        
+    }
+
+    &__blocTitleTagHostRate{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media screen and (max-width: $minDesktop) {
+            
+            display: unset;
+
+        }  
+
+    }
+
+    &__titleLocationTag {
+
+        &__title {
+
+            width: fit-content;
+            height: 51px;
+            margin: 0;
+            font-weight: 500;
+            font-size: 34px;
+            display: flex;
+            align-items: flex-end;
+            color: $pink;
+
+            @media screen and (max-width: $minDesktop) {
+
+                width: 100%;
+                height:fit-content;
+                font-size: 18px;
+                line-height: 26px;
+                
+            }
+
+        }
+
+        &__location {
+
+            width: fit-content;
+            height: 26px;
+            margin: 0;
+            font-weight: 500;
+            font-size: 18px;
+            display: flex;
+            align-items: flex-end;
+            color: $pink;
+
+            @media screen and (max-width: $minDesktop) {
+
+                width: 100%;
+                height: 22px;
+                margin: 5px 0 0 0;
+                font-size: 14px;
+            }
+
+        }
+
+        &__tags {
+
+            width: fit-content;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            margin: 20px 0 0 0;
+
+            @media screen and (max-width: $minDesktop) {
+
+                height:fit-content;
+                margin: 10px 0 0 0;
+                display: grid;
+                grid-template-columns: 84px 84px 84px;
+                grid-column-gap: 10px;
+                grid-row-gap: 7px;
+                
+            }
+
+        }
+
+    }
+
+    &__blocHostRate {
+
+        @media screen and (max-width: $minDesktop) {
+
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        &__host{
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            @media screen and (max-width: $minDesktop) {
+
+                margin: 16px 0 0 0;
+                width: min-content;
+    
+            }
+
+            &__name {
+
+                width: min-content;
+                height: 52px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                text-align: right;
+                color: $pink;
+                margin: 0 10px 0 0;
+
+                @media screen and (max-width: $minDesktop) {
+
+                    height: 33px;
+                    font-size: 12px;
+                    line-height: 17px;
+
+                }
+
+            }
+
+            &__picture {
+
+                width: 64px;
+                height: 64px;
+                background-color: $grey;
+                border-radius: 32px;
+
+                @media screen and (max-width: $minDesktop) {
+
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 16px;
+
+                }
+
+            }
+
+        }
+
+        &__rate {
+
+            width: 180px;
+            height: 36px;
+            margin: 21px 0 0 0;
+
+            @media screen and (max-width: $minDesktop) {
+
+                width: 98px;
+                height: 18px;
+                margin: 16px 0 0 0;
+
+            }
+
+        }
+
+    }
+
+    .collapseAccommodation__p {
+
+        margin: 0;
+        font-size: 18px;
+        line-height: 26px;
+
+        @media screen and (max-width: $minDesktop) {
+        
+            font-size: 12px;
+            line-height: 17px;
+    
+        }
+
+
+    }
+
+    .accommodationDescription__collapse {
+
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: $minDesktop) {
+        
+            display: unset;
+    
+        }
+
+
+        .collapse {
+
+            margin: 24px 0 0 0;
+            width: 46.94%;
+        
+            @media screen and (max-width: $minDesktop) {
+        
+                margin: 20px 0 0 0;
+                width: 100%;
+        
+            }
+        
+            &__dropdown {
+        
+                height: 52px;
+                padding: 0 2.5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 10px;
+                background-color: $pink;
+        
+                @media screen and (max-width: $minDesktop) {
+        
+                    height: 30px;
+                    padding: 0 3%;
+                    border-radius: 5px;
+                    
+                }
+        
+                p {
+        
+                    color: $white;
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin: 0;
+        
+                    @media screen and (max-width: $minDesktop) {
+        
+                        font-size: 13px;
+        
+                    }
+        
+                }
+        
+                img {
+        
+                    width: 24px;
+                    height: 13.71px;
+                    color: $white;
+        
+                    @media screen and (max-width: $minDesktop) {
+        
+                        width: 13.81px;
+                        height: 7.91px;
+                
+                    }
+        
+                    &:hover {
+        
+                        cursor: pointer;
+        
+                    }
+        
+                }
+        
+            }
+        
+            &__dropdownOpen {
+        
+                height: 249px;
+                padding: 40px 2.5% 0 2.5%;
+                border-radius: 10px;
+                background-color: $ligthPink;
+                color: $pink;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: justify;
+                position: relative;
+                top: -10px;
+                z-index: -1;
+        
+                @media screen and (max-width: $minDesktop) {
+        
+                    height: fit-content;
+                    font-size: 12px;
+                    line-height: 17px;
+                    padding: 20px 3% 10px 3%;
+                    border-radius: 5px;
+                
+                }
+        
+            }
+        
+        }
+
+    }
+
+}

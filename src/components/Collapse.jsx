@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import VectorDown from '../assets/VectorDown.svg';
 import VectorUp from '../assets/VectorUp.svg';
 
-function Collapse({collapseTitle, collapseContent}) {
+function Collapse({collapseTitle, collapseContents}) {
 
     //On crée une variable isOpen associée avec la fonction setIsOpen
     //et on l'initiale à false avec useState:
@@ -15,9 +15,9 @@ function Collapse({collapseTitle, collapseContent}) {
             <div className="collapse__dropdown">
                 <p>{collapseTitle}</p>
                 {/*et lorsqu'on clique sur le vector up on passe le isOpen à faux :*/}
-                <div onClick={() => { setIsOpen(false) }}><img src={VectorUp} alt="vector up"/></div>
+                <div onClick={() => { setIsOpen(false) }}><img src={VectorUp} alt="close"/></div>
             </div>
-            <div className='collapse__dropdownOpen'>{collapseContent}</div>
+            <div className='collapse__dropdownOpen'>{collapseContents}</div>
         </div>
 
     ) : ( 
@@ -27,7 +27,7 @@ function Collapse({collapseTitle, collapseContent}) {
             <div className="collapse__dropdown">
                 <p>{collapseTitle}</p>
                 {/*et lorsqu'on clique sur le vector down on passe le isOpen à vrai :*/}
-                <div onClick={() => { setIsOpen(true) }}><img src={VectorDown} alt="vector down"/></div>
+                <div onClick={() => { setIsOpen(true) }}><img src={VectorDown} alt="open"/></div>
             </div>
         </div>
 

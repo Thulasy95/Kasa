@@ -1,11 +1,11 @@
 import Banner from "../../components/Banner";
-import imgAccueil from "../../assets/imgAccueil.png"
+import imgHome from "../../assets/imgHome.png";
 import Gallery from "../../components/Gallery";
 
 function Home() {
   return (
     <main>
-      <Banner image={imgAccueil} text="Chez vous, partout et ailleurs"/>
+      <Banner image={imgHome} text="Chez vous, partout et ailleurs"/>
       <Gallery/>
     </main>
   );
