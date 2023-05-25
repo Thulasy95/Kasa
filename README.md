@@ -1,3 +1,21 @@
+# Kasa
+
+Formation Developpeur Web - OPENCLASSROOMS
+
+Projet 7 : Créez une application web de location immobilière avec React
+
+Présentation de Kasa :
+
+Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. 
+Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders dans ce secteur en France.
+
+Mission : Intégrer les maquettes Figma responsive avec React.
+ 
+![image](https://github.com/Thulasy95/Kasa/assets/116100441/30135346-2478-406d-a385-255a140ebaa3)
+ 
+Vous trouverez, ci-dessous, les instructions pour lancer l'application react :
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
