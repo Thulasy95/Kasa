@@ -1,8 +1,8 @@
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import dataAccommodations from "../../datas/Accommodations.json";
 import Slideshow from "../../components/Slideshow";
 import AccommodationDescription from "../../components/AccommodationDescription";
-
+import Error from "../Error/Error";
 
 function Accommodation() {
 
@@ -37,8 +37,8 @@ function Accommodation() {
 
     ):(
 
-        //Si l'id est incorrecte alors on redirige vers la page Error 404 :
-        <Navigate to="/Error404" replace={true}/>
+        //Si l'id est incorrecte alors on affiche la page Error 404 :
+        <Error/>
 
     );
 }
